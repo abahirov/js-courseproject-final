@@ -66,7 +66,7 @@ src/
 
 ## Автори
 
-GoIT Team
+GoIT Team, Artem Bahirov
 
 ## Ліцензія
 
