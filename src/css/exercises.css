@@ -1,0 +1,221 @@
+.exercises-section {
+  margin-top: var(--spacing-lg);
+}
+
+.exercises-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  color: rgba(36, 36, 36, 0.4);
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: var(--color-primary);
+}
+
+.exercises-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.search-form {
+  position: relative;
+  margin-bottom: var(--spacing-md);
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 50px 12px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  transition: all 0.2s;
+  background: var(--color-white);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.search-btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: var(--color-secondary);
+}
+
+.search-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--color-text);
+}
+
+.exercises-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exercise-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s;
+}
+
+.exercise-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.exercise-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.exercise-badge {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text);
+  text-transform: uppercase;
+  background: rgba(244, 244, 244, 1);
+}
+
+.exercise-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.exercise-rating-value {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.exercise-rating-icon {
+  width: 14px;
+  height: 14px;
+  fill: #eea10c;
+}
+
+.exercise-card-body {
+  margin-bottom: 16px;
+}
+
+.exercise-card-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.exercise-card-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exercise-card-info-item {
+  display: flex;
+  font-size: 12px;
+}
+
+.exercise-card-info-label {
+  color: rgba(36, 36, 36, 0.4);
+  margin-right: 4px;
+}
+
+.exercise-card-info-label::after {
+  content: ':';
+}
+
+.exercise-card-info-value {
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.exercise-card-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.exercise-card-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.exercise-card-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.exercises-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 768px) {
+  .exercises-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .exercises-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

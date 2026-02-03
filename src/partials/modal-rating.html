@@ -1,0 +1,70 @@
+<div class="modal-overlay" id="rating-modal" style="display: none;">
+  <div class="modal-content modal-rating-content">
+    <button type="button" class="modal-close" id="rating-modal-close">
+      <svg width="24" height="24">
+        <use href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-rating-title">Rate exercise</h2>
+    <p class="modal-rating-subtitle">Please rate this exercise and provide your email</p>
+
+    <form class="rating-form" id="rating-form">
+      <div class="rating-stars" id="rating-stars">
+        <input type="radio" name="rating" value="1" id="rating-1" required>
+        <label for="rating-1" data-rating="1">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#star"></use>
+          </svg>
+          <span>1.0</span>
+        </label>
+
+        <input type="radio" name="rating" value="2" id="rating-2">
+        <label for="rating-2" data-rating="2">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#star"></use>
+          </svg>
+          <span>2.0</span>
+        </label>
+
+        <input type="radio" name="rating" value="3" id="rating-3">
+        <label for="rating-3" data-rating="3">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#star"></use>
+          </svg>
+          <span>3.0</span>
+        </label>
+
+        <input type="radio" name="rating" value="4" id="rating-4">
+        <label for="rating-4" data-rating="4">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#star"></use>
+          </svg>
+          <span>4.0</span>
+        </label>
+
+        <input type="radio" name="rating" value="5" id="rating-5">
+        <label for="rating-5" data-rating="5">
+          <svg width="24" height="24">
+            <use href="img/sprite.svg#star"></use>
+          </svg>
+          <span>5.0</span>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="rating-email">Email</label>
+        <input 
+          type="email" 
+          id="rating-email" 
+          name="email"
+          placeholder="Enter your email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+      </div>
+
+      <button type="submit" class="rating-submit-btn">Send</button>
+    </form>
+  </div>
+</div>

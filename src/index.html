@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+
+    <main id="main-content">
+      <load src="./partials/hero.html" />
+      <div class="container">
+        <div class="main-layout">
+          <aside class="sidebar">
+            <load src="./partials/quote.html" />
+          </aside>
+          <div class="main-content">
+            <load src="./partials/filters.html" />
+            <load src="./partials/categories.html" />
+            <load src="./partials/exercises.html" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <load src="./partials/modal-exercise.html" />
+    <load src="./partials/modal-rating.html" />
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

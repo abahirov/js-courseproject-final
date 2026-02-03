@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites - Your Energy</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+
+    <main id="main-content">
+      <div class="container">
+        <div class="favorites-layout">
+          <aside class="favorites-sidebar">
+            <load src="./partials/quote.html" />
+          </aside>
+
+          <section class="favorites-section">
+            <h1 class="favorites-title">Favorites</h1>
+            <div id="favorites-container"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <load src="./partials/footer.html" />
+    <load src="./partials/modal-exercise.html" />
+    <load src="./partials/modal-rating.html" />
+
+    <script type="module" src="./favorites.js"></script>
+  </body>
+</html>

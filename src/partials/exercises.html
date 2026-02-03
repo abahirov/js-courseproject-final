@@ -1,0 +1,31 @@
+<section class="exercises-section" style="display: none;">
+  <div class="exercises-header">
+    <button type="button" class="back-btn" id="back-to-categories">
+      ← Back to categories
+    </button>
+    <h2 class="exercises-title" id="exercises-title">Exercises</h2>
+  </div>
+
+  <form class="search-form" id="search-form">
+    <input
+      type="text"
+      class="search-input"
+      id="search-input"
+      placeholder="Search exercises..."
+      autocomplete="off"
+    />
+    <button type="submit" class="search-btn">
+      <svg width="20" height="20">
+        <use href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <ul class="exercises-list" id="exercises-list"></ul>
+
+  <div class="exercises-empty" id="exercises-empty" style="display: none;">
+    <p>No exercises found. Try a different search.</p>
+  </div>
+
+  <div id="pagination-container"></div>
+</section>
